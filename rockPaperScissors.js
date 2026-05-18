@@ -10,13 +10,13 @@ const computerChoise = validChoices[randomIndex];
 let result = "";
 if (playerChoice === computerChoise) {
     result = "draw draw draw!!";
-    } else if(
-        (playerChoice === 'rock' && computerChoise === 'scissors') ||
-        (playerChoice === 'paper' && computerChoise === 'rock') ||
-        (playerChoice === 'scissors' && computerChoise === 'paper')
-    ) {
-        result = "Winnerrrrrrrr!";
-    } else {
-        result = "Loserrrrrrr!";
-    }
-    console.log(`You chose ${playerChoice}. Computer chose ${computerChoise}. ${result}`);
+} else if (
+    (playerChoice === 'rock' && computerChoise === 'scissors') ||
+    (playerChoice === 'paper' && computerChoise === 'rock') ||
+    (playerChoice === 'scissors' && computerChoise === 'paper')
+) {
+    result = "Winnerrrrrrrr!";
+} else {
+    result = "Loserrrrrrr!";
+}
+console.log(`You chose ${playerChoice}. Computer chose ${computerChoise}. ${result}`);
